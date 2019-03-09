@@ -157,6 +157,7 @@
 %% Fields used in header.
 \newfield{firstname}
 \newfield{lastname}
+\newfield{studentid}
 \newfield{professor}
 \newfield{class}
 \renewfield{date}
@@ -196,6 +197,9 @@
       }{
         \get{firstname}~\get{lastname} \par
       }
+    }
+    \ifno{studentid}{}{
+        \get{studentid} \par
     }
     \ifno{professor}{}{
       \get{professor} \par
